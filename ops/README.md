@@ -7,9 +7,11 @@
 先登录服务器，用 SSH 或阿里云控制台的远程连接终端都可以，然后以 root 运行：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/creator915/Logita/refs/heads/claude/cool-gates-6jep8w/ops/setup-remote-control.sh -o setup-rc.sh
+curl -fsSL https://raw.githubusercontent.com/creator915/Logita/main/ops/setup-remote-control.sh -o setup-rc.sh
 bash setup-rc.sh /root/agda-backend
 ```
+
+这个脚本合并到 main 之前，把链接里的 `main` 换成 `refs/heads/claude/cool-gates-6jep8w`。
 
 脚本需要交互终端，所以要先下载再运行，不能用 `curl | bash`。中途有四处要你本人操作：
 
